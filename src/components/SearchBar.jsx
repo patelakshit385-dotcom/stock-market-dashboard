@@ -2,17 +2,19 @@ function SearchBar({ search, setSearch }) {
   return (
     <input
       type="text"
-      placeholder="🔍 Search by company or symbol..."
+      placeholder="🔍 Search company or symbol..."
       value={search}
       onChange={(e) => setSearch(e.target.value)}
       style={{
         width: "100%",
-        maxWidth: "400px",
-        padding: "12px",
-        marginBottom: "25px",
-        borderRadius: "8px",
-        border: "1px solid #ccc",
-        fontSize: "16px",
+        boxSizing: "border-box",
+        padding: "12px 14px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+        background: "#ffffff",
+        color: "#111827",
+        fontSize: "14px",
+        outline: "none",
       }}
     />
   );
